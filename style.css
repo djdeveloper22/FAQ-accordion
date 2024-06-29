@@ -60,7 +60,6 @@ img {
 .card {
   border-radius: 10px;
   max-width: 730px;
-  background-color: hsl(275, 100%, 97%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 2rem;
   position: absolute;
