@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+img {
+  object-fit: cover;
+}
+
+.work-sans-title {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.work-sans-text {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.section-card-acordion {
+  background-color: hsl(275, 100%, 97%);
+  min-height: 100dvh;
+  margin-bottom: -1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-body {
+  background-color: rgb(100, 5, 138);
+  background-image: url('/assets/images/background-pattern-desktop.svg');
+  background-position: top center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.section-card {
+  padding: 1rem;
+  width: 90%;
+  margin: auto;
+  flex-grow: 2;
+  position: relative;
+}
+
+.card {
+  border-radius: 10px;
+  max-width: 730px;
+  background-color: hsl(275, 100%, 97%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  right: 0;
+  border: 1px solid rgba(61, 3, 61, 0.281);
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1.8rem;
+}
+
+.card-title h1 {
+  font-size: 3rem;
+}
+
+.msg-option-acordion {
+  padding-block: 1.5rem;
+}
+
+.msg-option-acordion:nth-child(1) {
+  border-block-end: 0.1rem solid #3015340c;
+}
+
+.msg-option-acordion:nth-child(2) {
+  border-block-end: 0.1rem solid #3015340c;
+}
+
+.msg-option-acordion:nth-child(3) {
+  border-block-end: 0.1rem solid #3015340c;
+}
+
+.msg-header-acordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.msg-header-acordion>span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 90%;
+}
+
+.msg-option-acordion>p {
+  margin-block-start: 1rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+  color: rgba(55, 2, 71, 0.397);
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.show-msg-text {
+  display: none;
+  overflow: hidden;
+}
+
+.show-msg-text.active {
+  transition: all 0.3s ease-in;
+  display: block;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (width > 917px) {
+  .bg-body {
+    flex-grow: 1;
+  }
+
+  .section-card {
+    position: relative;
+  }
+
+  .card {
+    position: absolute;
+    margin: auto;
+  }
+}
